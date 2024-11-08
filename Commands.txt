@@ -1,0 +1,21 @@
+make S3 Bucket
+Make EC2 t2 small Ubuntu Keylogin Key pair
+check 3 network setting Add security rule 8080 
+Than Give EC2 full access To S3 By Role
+Than Connect And Run Following commands
+
+sudo apt update
+sudo apt install python3-pip
+sudo apt install python3.12-venv
+python3 -m venv airflow_venv
+source airflow_venv/bin/activate
+pip install pandas
+pip install s3fs
+pip install apache-airflow
+pip install apache-airflow-providers-amazon
+
+airflow standalone
+
+connect to VS code make a folder inside airflow named it dags than a file named with your dag.py
+Than add your dag and do necessary changes 
+After That run it on airflow
